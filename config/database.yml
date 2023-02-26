@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: render_deploy_rails_7_production
   username: render_deploy_rails_7
   password: <%= ENV["RENDER_DEPLOY_RAILS_7_DATABASE_PASSWORD"] %>
